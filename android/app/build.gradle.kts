@@ -42,3 +42,8 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // Required by uCrop classes used via image_cropper during release shrink.
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+}
